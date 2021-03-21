@@ -1,26 +1,26 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Alert from 'react-bootstrap/Alert'
+import {
+  Container,
+  Row,
+  Col,
+  Navbar,
+  Nav,
+  Media,
+  Image,
+  Card,
+} from 'react-bootstrap'
+
+import MyNavbar from '../Component/my-navbar'
 
 export default function Home() {
   return (
-    <div>
-      {
-        [
-          'primary',
-          'secondary',
-          'success',
-          'danger',
-          'warning',
-          'info',
-          'light',
-          'dark',
-        ].map((variant, idx) => (
-          <Alert key={idx} variant={variant}>
-            This is a {variant} alert—check it out!
-          </Alert>
-        ))
-      }
-    </div>
+    <Container>
+      <div>
+      <MyNavbar />
+
+      </div>
+    
+
+    </Container>
+   
   )
 }
